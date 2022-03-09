@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="opdracht1.php" method="POST">
+    <label for="bedrag">Bedrag exclusief BTW</label>
+    <input id="bedrag" name="bedrag" type="number">
+    <label for="aantalBTW">Hoeveelheid BTW</label>
+    <select id="aantalBTW" name="aantalBTW" required>
+        <option value="9">Laag. 9%</option>
+        <option value="21">Hoog. 21%</option>
+    </select>
+
+    <input type="submit" name="send" value="Uitrekenen">
+</form>
+</body>
+</html>

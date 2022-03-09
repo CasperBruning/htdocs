@@ -1,0 +1,131 @@
+textButton1 {
+  opacity: 0;
+}
+
+.textButton1 {
+  margin-left: 20px;
+  margin-top: 15px;
+  float: left;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.fa.fa-id-card.idCardPictureMenu {
+  float: left;
+  margin-left: 0;
+}
+
+.fa.fa-folder-o.vergunningPictureMenu {
+  float: left;
+}
+
+.textButton2 {
+  margin-left: 20px;
+  margin-top: -20px;
+  float: left;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.fa.fa-trash-o.afvalPictureMenu {
+  float: left;
+  margin-top: 10px;
+}
+
+.textButton3 {
+  margin-left: 20px;
+  margin-top: 15px;
+  float: left;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.fa.fa-money.belastingIconMenu {
+  float: left;
+}
+
+.fa.fa-user.sociaalDomeinPictureMenu {
+  float: left;
+}
+
+.fa.fa-user.trouwenPictureMenu {
+  float: left;
+  margin-top: 15px;
+}
+
+.textButton6 {
+  margin-left: 20px;
+  margin-top: 15px;
+  float: left;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.fa.fa-id-card-o.idCardPictureMenu {
+  float: left;
+}
+
+.dildo {
+  color: blue;
+}
+
+.fa.fa-book.sociaalDomeinPictureMenu {
+  float: left;
+}
+
+.fa.fa-book.sociaalDomeinPictureMenu2 {
+  margin: 0;
+  margin-left: 0;
+  float: left;
+}
+
+.fa.fa-book.idCardPictureMenu {
+  float: left;
+}
+
+.fa.fa-id-card-o.vergunningPictureMenu {
+  float: left;
+}
+
+.fa.fa-lock.afvalPictureMenu {
+  float: left;
+  margin-top: 25px;
+}
+
+button {
+  float: left;
+}
+
+input {
+  float: left;
+}
+
+button {
+  float: none;
+}
+
+button {
+  float: left;
+}
+
+p {
+  text-align: left;
+}
+
+p {
+  float: none;
+}
+
+.textButton1 {
+  float: left;
+}
+
+.fa.fa-building.idCardPictureMenu {
+  float: left;
+}
+
+.login-clean {
+  background: url(https://achterhoek.nl/storage/user_1/images/6dd93aabe95f7dbc49c1b3f58b2b2cde.jpg);
+  margin-bottom: 50px;
+}
+

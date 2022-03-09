@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<form action="opdracht2.php" method="POST">
+    <label for="getal1">Getal1</label>
+    <input id="getal1" type="number" name="getal1" required>
+    <br>
+    <label for="+">Optellen</label>
+    <input id="+" type="radio" name="operator" value="1">
+    <br>
+
+    <label for="-">Aftrekken</label>
+    <input id="-" type="radio" name="operator" value="2">
+    <br>
+    <label for="*">Vermenigvuldigen</label>
+    <input id="*" type="radio" name="operator" value="3">
+    <br>
+    <label for="/">Delen</label>
+    <input id="/" type="radio" name="operator" value="4">
+    <br>
+    <label for="getal2">Getal2</label>
+    <input id="getal2" name="getal2" type="number">
+    <br>
+    <input type="submit" value="Berekenen" name="send">
+</form>
+</body>
+</html>
