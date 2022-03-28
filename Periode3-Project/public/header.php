@@ -1,5 +1,6 @@
 <?php
-//require "../src/userFunctions.php"?>
+require "../config/database.php"
+?>
 
 <!doctype html>
 <html lang="en">

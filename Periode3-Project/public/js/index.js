@@ -5,8 +5,12 @@ $(document).ready(()=> {
         $(".menuLI").css('display', 'none')
     })
 
-
+    //FORMAAT Select
     $(`.caseOptions`).addClass("hide")
+    $(`.miniitx`).addClass("hide")
+    $(`.microatx`).addClass("hide")
+    $(`.atx`).addClass("hide")
+
     $(`input[name=myradio]`).on('click', ()=>{
         let elementname = ($(`input[name=myradio]:checked`).val())
         console.log(elementname)
@@ -18,9 +22,9 @@ $(document).ready(()=> {
         $("."+elementname).removeClass("hide")
     })
 
+    //CPU Select
     $(`.amd`).addClass("hide")
     $(`.intel`).addClass("hide")
-
     $(`input[name=myradio1]`).on('click', ()=>{
         let elementname = ($(`input[name=myradio1]:checked`).val())
         console.log(elementname)
@@ -30,6 +34,7 @@ $(document).ready(()=> {
         $("."+elementname).removeClass("hide")
     })
 
+    //GPU Select
     $(`.nvidia`).addClass("hide")
     $(`.radeon`).addClass("hide")
     $(`input[name=myradio2]`).on('click', ()=>{
