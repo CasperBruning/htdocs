@@ -1,0 +1,434 @@
+.designContainer{
+    display: flex;
+    flex-direction: row;
+    /*background-image: linear-gradient(to bottom right, #e3e1d9, #cfcecb, #cfcecb);*/
+
+}
+body{
+    background-color: ;
+}
+.designLeftContainer{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    /*background-image: linear-gradient(to bottom right, #e3e1d9, #cfcecb, #cfcecb);*/
+}
+.designLeftContainer img{
+    height: auto;
+    width: 70%;
+}
+.designRightContainer{
+    background-color: white;
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+}
+.designRightContainer ol{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.designRightContainer hr{
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #d1cfcf;
+    height: 2px;
+    border: none;
+}
+.designRightContainer li{
+    color: #d1cfcf;
+}
+.designRightContainer .categorie1{
+    color: black;
+    list-style: none;
+}
+.test{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.design1{
+    display: flex;
+}
+.selecteerGrootte{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.selecteerGrootteH1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.selecteerGrootteH1 h1{
+    text-align: center;
+}
+.selecteerGrootte h1{
+ /*margin-left: 30%;*/
+}
+.product-container{
+    margin-top: 10px;
+}
+
+.div-inline-list{
+    margin: 24px auto;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.div-inline-list > .product-container{
+    display: inline-block;
+    margin: 16px;
+}
+.product-container{
+    position: relative;
+    max-width: 100px;
+    min-height: 100px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*.product{*/
+.product{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*    position: absolute;*/
+/*    top: 50%;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%, -50%);*/
+/*}*/
+.clickable{
+    position: absolute;
+    width: 700%;
+    height: 100%;
+    top: -30px;
+    left: 30px;
+    border: 1px solid black;
+    border-radius: 4px;
+    transition: all .05s;
+    /*z-index: 10;*/
+}
+.checked-box{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 22px;
+    height: 22px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    display: none;
+}
+.prod1{
+    display: flex;
+    flex-direction: row;
+}
+.imageDiv{
+    width: 100px;
+    height: 100px;
+    justify-content: start;
+    float: left;
+}
+.divText{
+    width: 550px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+.prod1Img{
+    width:90% ;
+    height: auto;
+}
+.producth1{
+    width: 600px;
+    height: 50px;
+    margin: 0;
+    text-align: left;
+}
+
+.productP{
+    height: 50px;
+    width: 600px;
+    font-size:12px;
+    text-align: left;
+    margin: 0;
+}
+.product2{
+    width: 700px;
+    height: 50px;
+    margin-top: -20px;
+    margin-left: -220px;
+}
+.chooseCaseH1{
+    width: 700px;
+}
+.caseOption{
+    width: 700px;
+    background: white;
+}
+.hide{
+    display: none;
+}
+input[name="myradio"]:checked + .clickable{
+
+    border: 3px solid black ;
+}
+input[name="myradio"]:checked + .clickable .checked-box{
+    display: block;
+}
+.next1{
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 50%;
+    background-color: #f1f1f1;
+    /*align-content: baseline;*/
+    align-content: baseline;
+
+}
+.next{
+    background-color: #ebebeb;
+    width: 100%;
+    height: 100px;
+    display: flex;
+}
+.nextH1{
+    color: #b7b7b7;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    transition: all 100ms;
+    margin: 0;
+}
+.next a{
+    width: 100%;
+    height: 100%;
+}
+.next a:hover{
+    text-decoration: none;
+}
+.chooseCPUH1 {
+    margin-top: 50px;
+    width: 700px;
+}
+.cpuselect{
+    width: 500px;
+}
+.chooseCPU{
+
+}
+.chooseGPUH1{
+    margin-top: 50px;
+    max-width: 763px;
+}
+.gpuselect{
+    width: 500px;
+}
+.moboselect{
+    width: 500px;
+    margin: 0 auto;
+}
+.cpucoolerselect{
+    width: 500px;
+    margin: 0 auto;
+}
+.ramselect{
+    width: 500px;
+    margin: 0 auto;
+}
+.moboselect{
+    width: 500px;
+    margin: 0 auto;
+}
+.div-inline-list1{
+     margin: 0 auto;
+     width: 80%;
+     text-align: center;
+     display: flex;
+     flex-direction: row;
+ }
+
+.div-inline-list1 > .product-container1{
+    display: inline-block;
+}
+.gpuselect{
+    width: 500px;
+    margin: 16px;
+}
+.product-container1{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    padding: 0px;
+    margin: 16px;
+}
+
+.product1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.clickable1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 150px;
+    border: 1px solid green;
+    border-radius: 4px;
+    transition: all ease .05s;
+    z-index: 10;
+}
+.checked-box1{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 22px;
+    height: 22px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    /*border-top-right-radius: 4px;*/
+    display: none;
+}
+.cpu2IMG{
+    width:85% ;
+    height: auto;
+}
+.cpu1IMG{
+    margin-top: 15px;
+    width:80% ;
+    height: auto;
+}
+input[name="myradio1"]:checked + .clickable1 .checked-box1{
+    display: block;
+}
+input[name="myradio1"]:checked + .clickable1{
+
+    border: 3px solid black ;
+}
+select{
+    background-color: white;
+    border: 1px solid lightgrey;
+    /*border-radius: 8px;*/
+    /*box-shadow: 1px 1px 1px lightgrey;*/
+}
+option{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+.div-inline-list2{
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+.div-inline-list2 > .product-container2{
+    display: inline-block;
+    margin: 16px;
+}
+.product-container2{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    padding: 0px;
+}
+
+.product2{
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.clickable2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 150px;
+    border: 1px solid green;
+    border-radius: 4px;
+    transition: all ease .05s;
+    z-index: 10;
+}
+.checked-box2{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 22px;
+    height: 22px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    /*border-top-right-radius: 4px;*/
+    display: none;
+}
+.gpu2IMG{
+    width:85% ;
+    height: auto;
+}
+.gpu1IMG{
+    margin-top: 15px;
+    width:85% ;
+    height: auto;
+}
+input[name="myradio2"]:checked + .clickable2 .checked-box2{
+    display: block;
+}
+input[name="myradio2"]:checked + .clickable2{
+
+    border: 3px solid black ;
+}
+.chooseFAN{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 763px;
+}
+.fanselect{
+    width: 500px;
+    margin: 0 auto;
+}
+.opslagselect{ require_once ("footer.php")
+    width: 500px;
+    margin: 0 auto;
+}
+.kabelSelect{
+    width: 500px;
+    margin: 0 auto;
+}
+.bestelKnop{
+    width: 100%;
+    height: 50px;
+    background-color: #ebebeb;
+
+}
