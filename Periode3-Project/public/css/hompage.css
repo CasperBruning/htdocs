@@ -12,9 +12,6 @@
     .leftContainerHP img{
         width: 300%;
     }
-    .rightContainerHP{
-        margin-top: 80%;
-    }
     .rightContainerHP h1, .rightContainerHP p, .rightContainerHP a{
         margin-left: -10%;
     }
@@ -87,7 +84,6 @@
     }
 
     .rightContainerHP {
-        margin-top: -10%;
         display: flex;
         justify-content: center;
         width: 50%;

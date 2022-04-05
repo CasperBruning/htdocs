@@ -1,5 +1,13 @@
 <?php
-require "../config/database.php"
+require_once ("../config/database.php");
+require_once ('../src/userFunctions.php');
+require_once ("../src/databaseFunctions.php");
+$user = null;
+session_start();
+
+if (isset($_SESSION['userID'])){
+    $user = $_SESSION['userID'];
+}
 ?>
 
 <!doctype html>
@@ -11,13 +19,14 @@ require "../config/database.php"
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-          rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/hompage.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/design.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/order.css">
     <script src="js/jQuery/jquery-3.6.0.min.js"></script>
     <script src="js/index.js"></script>
     <title>PC-Samensteller</title>
@@ -36,9 +45,17 @@ require "../config/database.php"
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">AdminPage</a></li>
-        <li class="logInIconLI"><a href="#"><img class="logInIcon" src="img/LoggedInIcon.png"><span class="LogInText">Account</span></a></li>
-        <li><a href="#">Log In</a></li>
-        <li><a href="#">Sign Up</a></li>
+        <?php
+        if ($user != null){?>
+            <li><a href="logout.php">uitloggen</a></li>
+            <li class="logInIconLI"><a href="#"><img class="logInIcon" src="img/LoggedInIcon.png"><span class="LogInText">Account</span></a></li>
+        <?php
+        }else{
+        ?>
+            <li><a href="login.php">Log In</a></li>
+            <li><a href="register.php">Sign Up</a></li>
+        <?php }
+        ?>
 
     </ul>
 </section>

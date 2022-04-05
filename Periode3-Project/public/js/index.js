@@ -22,6 +22,7 @@ $(document).ready(()=> {
         $("."+elementname).removeClass("hide")
     })
 
+    $
     //CPU Select
     $(`.amd`).addClass("hide")
     $(`.intel`).addClass("hide")
