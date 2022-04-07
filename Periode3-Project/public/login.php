@@ -2,15 +2,13 @@
 require_once('header.php');
 
 
-
-
 $user = null;
 
-if(isset($_POST["login"])) {
+if (isset($_POST["login"])) {
     echo "$user";
 
     $user = getUser($_POST['email'], $_POST['password']);
-    if ($user != null && $user != "No user Found"){
+    if ($user != null && $user != "No user Found") {
         $_SESSION['userID'] = $user['gebruikersID'];
         $_SESSION['userMAIL'] = $user['email'];
         $_SESSION['userTEL'] = $user['telefoonnummer'];
@@ -21,7 +19,7 @@ if(isset($_POST["login"])) {
     } else {
         ?>
         <script>
-            $(document).ready(function (){
+            $(document).ready(function () {
                 alert("Email of Wachtwoord onjuist")
             })
         </script>
@@ -40,12 +38,14 @@ if(isset($_POST["login"])) {
                     <div class="row form-group">
                         <div class="col-sm-4 label-column"><label class="col-form-label"
                                                                   for="email-input-field">Email </label></div>
-                        <div class="col-sm-6 input-column"><input required name="email" class="form-control" type="email"></div>
+                        <div class="col-sm-6 input-column"><input required name="email" class="form-control"
+                                                                  type="email"></div>
                     </div>
                     <div class="row form-group">
                         <div class="col-sm-4 label-column"><label class="col-form-label" for="pawssword-input-field">Wachtwoord</label>
                         </div>
-                        <div class="col-sm-6 input-column"><input required name="password" class="form-control" type="password"></div>
+                        <div class="col-sm-6 input-column"><input required name="password" class="form-control"
+                                                                  type="password"></div>
                     </div>
                     <div class="form-check"></div>
                     <button class="btn btn-light submit-button" name="login" type="submit">Inloggen</button>

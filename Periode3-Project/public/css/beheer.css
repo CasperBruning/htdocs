@@ -1,56 +1,68 @@
-.titleBH{
+.titleBH {
     float: left;
     width: 100%;
     background-color: white;
 }
-.leftContainerBH{
-    margin:4px, 4px;
-    padding:4px;
+
+.leftContainerBH {
+    margin: 4px, 4px;
+    padding: 4px;
     overflow-x: hidden;
     overflow-y: scroll;
-    text-align:justify;
+    text-align: justify;
     width: 20%;
     height: 825px;
     float: left;
     background-color: white;
 
 }
-.rightContainerBH{
+
+.rightContainerBH {
     width: 80%;
     height: 825px;
     float: right;
     background-color: white;
 }
-.leftContainerBH table{
+
+.leftContainerBH table {
     border: 1px solid black;
     width: 100%;
 }
-.leftContainerBH td{
+
+.leftContainerBH td {
     /*padding: 3px;*/
     padding-left: 4px;
     border: 1px solid black;
 }
-.rightContainerBH form{
+
+.rightContainerBH form {
     margin: 0 auto;
 }
-.rightContainerBH .orderTable{
+
+.rightContainerBH .orderTable {
     border: 1px solid black;
 }
-.rightContainerBH .orderTable td{
+
+.rightContainerBH .orderTable td {
     border: 1px solid black;
 }
-.rightContainerBH .orderTable th{
+
+.rightContainerBH .orderTable th {
     border: 1px solid black;
 }
-.leftContainerBH td{
+
+.leftContainerBH td {
     background-color: white;
 }
-.veranderStatusTable{
+
+.veranderStatusTable {
     margin-top: 5px;
 }
-.veranderStatusTable th{
+
+.veranderStatusTable th {
     text-align: center;
 }
-.veranderStatusTable{
+
+.veranderStatusTable {
     border: 1px solid black;
 }

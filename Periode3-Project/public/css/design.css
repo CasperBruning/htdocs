@@ -1,13 +1,15 @@
-.designContainer{
+.designContainer {
     display: flex;
     flex-direction: row;
     /*background-image: linear-gradient(to bottom right, #e3e1d9, #cfcecb, #cfcecb);*/
 
 }
-body{
+
+body {
     background-color: ;
 }
-.designLeftContainer{
+
+.designLeftContainer {
     width: 50%;
     height: 100%;
     display: flex;
@@ -16,11 +18,13 @@ body{
     position: fixed;
     /*background-image: linear-gradient(to bottom right, #e3e1d9, #cfcecb, #cfcecb);*/
 }
-.designLeftContainer img{
+
+.designLeftContainer img {
     height: auto;
     width: 70%;
 }
-.designRightContainer{
+
+.designRightContainer {
     background-color: white;
     width: 50%;
     height: auto;
@@ -32,67 +36,80 @@ body{
     top: 50px;
     left: 50%;
 }
-.designRightContainer ol{
+
+.designRightContainer ol {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-.designRightContainer hr{
+
+.designRightContainer hr {
     margin-left: 5%;
     margin-right: 5%;
     background-color: #d1cfcf;
     height: 2px;
     border: none;
 }
-.designRightContainer li{
+
+.designRightContainer li {
     color: #d1cfcf;
 }
-.designRightContainer .categorie1{
+
+.designRightContainer .categorie1 {
     color: black;
     list-style: none;
 }
-.test{
+
+.test {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-.design1{
+
+.design1 {
     display: flex;
 }
-.selecteerGrootte{
+
+.selecteerGrootte {
     display: flex;
     justify-content: center;
     flex-direction: column;
 
 }
-.selecteerGrootteH1{
+
+.selecteerGrootteH1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
 
 }
-.selecteerGrootteH1 h1{
+
+.selecteerGrootteH1 h1 {
     text-align: center;
 }
-.selecteerGrootte h1{
- /*margin-left: 30%;*/
+
+.selecteerGrootte h1 {
+    /*margin-left: 30%;*/
 }
-.product-container{
+
+.product-container {
     margin-top: 10px;
 }
 
-.div-inline-list{
+.div-inline-list {
     margin: 24px auto;
     width: 80%;
     text-align: center;
     display: flex;
     flex-direction: column;
 }
-.div-inline-list > .product-container{
+
+.div-inline-list > .product-container {
     display: inline-block;
     margin: 16px;
 }
-.product-container{
+
+.product-container {
     position: relative;
     max-width: 100px;
     min-height: 100px;
@@ -103,18 +120,19 @@ body{
 }
 
 /*.product{*/
-.product{
+.product {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
 /*    position: absolute;*/
 /*    top: 50%;*/
 /*    left: 50%;*/
 /*    transform: translate(-50%, -50%);*/
 /*}*/
-.clickable{
+.clickable {
     position: absolute;
     width: 700%;
     height: 100%;
@@ -125,7 +143,8 @@ body{
     transition: all .05s;
     /*z-index: 10;*/
 }
-.checked-box{
+
+.checked-box {
     position: absolute;
     top: 0px;
     right: 0px;
@@ -136,65 +155,77 @@ body{
     text-align: center;
     display: none;
 }
-.prod1{
+
+.prod1 {
     display: flex;
     flex-direction: row;
 }
-.imageDiv{
+
+.imageDiv {
     width: 100px;
     height: 100px;
     justify-content: start;
     float: left;
 }
-.divText{
+
+.divText {
     width: 550px;
     height: 100px;
     display: flex;
     flex-direction: column;
     float: left;
 }
-.prod1Img{
-    width:90% ;
+
+.prod1Img {
+    width: 90%;
     height: auto;
 }
-.producth1{
+
+.producth1 {
     width: 600px;
     height: 50px;
     margin: 0;
     text-align: left;
 }
 
-.productP{
+.productP {
     height: 50px;
     width: 600px;
-    font-size:12px;
+    font-size: 12px;
     text-align: left;
     margin: 0;
 }
-.product2{
+
+.product2 {
     width: 700px;
     height: 50px;
     margin-top: -20px;
     margin-left: -220px;
 }
-.chooseCaseH1{
+
+.chooseCaseH1 {
     width: 700px;
 }
-.caseOption{
+
+.caseOption {
     width: 700px;
     background: white;
 }
-.hide{
+
+.hide {
     display: none;
 }
-input[name="myradio"]:checked + .clickable{
 
-    border: 3px solid black ;
+input[name="myradio"]:checked + .clickable {
+
+    border: 3px solid black;
 }
-input[name="myradio"]:checked + .clickable .checked-box{
+
+input[name="myradio"]:checked + .clickable .checked-box {
     display: block;
 }
-.next1{
+
+.next1 {
     position: absolute;
     bottom: 0;
     height: 100px;
@@ -204,13 +235,15 @@ input[name="myradio"]:checked + .clickable .checked-box{
     align-content: baseline;
 
 }
-.next{
+
+.next {
     background-color: #ebebeb;
     width: 100%;
     height: 100px;
     display: flex;
 }
-.nextH1{
+
+.nextH1 {
     color: #b7b7b7;
     justify-content: center;
     align-content: center;
@@ -220,62 +253,76 @@ input[name="myradio"]:checked + .clickable .checked-box{
     transition: all 100ms;
     margin: 0;
 }
-.next a{
+
+.next a {
     width: 100%;
     height: 100%;
 }
-.next a:hover{
+
+.next a:hover {
     text-decoration: none;
 }
+
 .chooseCPUH1 {
     margin-top: 50px;
     width: 700px;
 }
-.cpuselect{
+
+.cpuselect {
     width: 500px;
 }
-.chooseCPU{
+
+.chooseCPU {
 
 }
-.chooseGPUH1{
+
+.chooseGPUH1 {
     margin-top: 50px;
     max-width: 763px;
 }
-.gpuselect{
-    width: 500px;
-}
-.moboselect{
-    width: 500px;
-    margin: 0 auto;
-}
-.cpucoolerselect{
-    width: 500px;
-    margin: 0 auto;
-}
-.ramselect{
-    width: 500px;
-    margin: 0 auto;
-}
-.moboselect{
-    width: 500px;
-    margin: 0 auto;
-}
-.div-inline-list1{
-     margin: 0 auto;
-     width: 80%;
-     text-align: center;
-     display: flex;
-     flex-direction: row;
- }
 
-.div-inline-list1 > .product-container1{
+.gpuselect {
+    width: 500px;
+}
+
+.moboselect {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.cpucoolerselect {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.ramselect {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.moboselect {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.div-inline-list1 {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.div-inline-list1 > .product-container1 {
     display: inline-block;
 }
-.gpuselect{
+
+.gpuselect {
     width: 500px;
     margin: 16px;
 }
-.product-container1{
+
+.product-container1 {
     position: relative;
     width: 100px;
     height: 100px;
@@ -283,14 +330,15 @@ input[name="myradio"]:checked + .clickable .checked-box{
     margin: 16px;
 }
 
-.product1{
+.product1 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
 }
-.clickable1{
+
+.clickable1 {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -301,7 +349,8 @@ input[name="myradio"]:checked + .clickable .checked-box{
     transition: all ease .05s;
     z-index: 10;
 }
-.checked-box1{
+
+.checked-box1 {
     position: absolute;
     top: 0px;
     right: 0px;
@@ -313,34 +362,41 @@ input[name="myradio"]:checked + .clickable .checked-box{
     /*border-top-right-radius: 4px;*/
     display: none;
 }
-.cpu2IMG{
-    width:85% ;
+
+.cpu2IMG {
+    width: 85%;
     height: auto;
 }
-.cpu1IMG{
+
+.cpu1IMG {
     margin-top: 15px;
-    width:80% ;
+    width: 80%;
     height: auto;
 }
-input[name="myradio1"]:checked + .clickable1 .checked-box1{
+
+input[name="myradio1"]:checked + .clickable1 .checked-box1 {
     display: block;
 }
-input[name="myradio1"]:checked + .clickable1{
 
-    border: 3px solid black ;
+input[name="myradio1"]:checked + .clickable1 {
+
+    border: 3px solid black;
 }
-select{
+
+select {
     background-color: white;
     border: 1px solid lightgrey;
     /*border-radius: 8px;*/
     /*box-shadow: 1px 1px 1px lightgrey;*/
 }
-option{
+
+option {
     background-color: white;
     border: 1px solid black;
     border-radius: 8px;
 }
-.div-inline-list2{
+
+.div-inline-list2 {
     margin: 0 auto;
     width: 80%;
     text-align: center;
@@ -350,18 +406,20 @@ option{
     display: flex;
     flex-direction: row;
 }
-.div-inline-list2 > .product-container2{
+
+.div-inline-list2 > .product-container2 {
     display: inline-block;
     margin: 16px;
 }
-.product-container2{
+
+.product-container2 {
     position: relative;
     width: 100px;
     height: 100px;
     padding: 0px;
 }
 
-.product2{
+.product2 {
     position: absolute;
 
     top: 50%;
@@ -369,7 +427,8 @@ option{
     transform: translate(-50%, -50%);
 
 }
-.clickable2{
+
+.clickable2 {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -380,7 +439,8 @@ option{
     transition: all ease .05s;
     z-index: 10;
 }
-.checked-box2{
+
+.checked-box2 {
     position: absolute;
     top: 0px;
     right: 0px;
@@ -392,41 +452,50 @@ option{
     /*border-top-right-radius: 4px;*/
     display: none;
 }
-.gpu2IMG{
-    width:85% ;
+
+.gpu2IMG {
+    width: 85%;
     height: auto;
 }
-.gpu1IMG{
+
+.gpu1IMG {
     margin-top: 15px;
-    width:85% ;
+    width: 85%;
     height: auto;
 }
-input[name="myradio2"]:checked + .clickable2 .checked-box2{
+
+input[name="myradio2"]:checked + .clickable2 .checked-box2 {
     display: block;
 }
-input[name="myradio2"]:checked + .clickable2{
 
-    border: 3px solid black ;
+input[name="myradio2"]:checked + .clickable2 {
+
+    border: 3px solid black;
 }
-.chooseFAN{
+
+.chooseFAN {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 763px;
 }
-.fanselect{
+
+.fanselect {
     width: 500px;
     margin: 0 auto;
 }
-.opslagselect{ require_once ("footer.php")
+
+.opslagselect {
+    require_once ("footer.php") width: 500 px;
+    margin: 0 auto;
+}
+
+.kabelSelect {
     width: 500px;
     margin: 0 auto;
 }
-.kabelSelect{
-    width: 500px;
-    margin: 0 auto;
-}
-.bestelKnop{
+
+.bestelKnop {
     width: 100%;
     height: 50px;
     background-color: #ebebeb;

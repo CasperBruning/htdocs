@@ -151,9 +151,6 @@ if (isset($_POST['Cancelled'])) {
                         <th colspan="5">Verander order status</th>
                     </tr>
                     <tr>
-                        <th colspan="5">Verander order status</th>
-                    </tr>
-                    <tr>
                         <td>
                             <input type="submit" value="Awaiting Payment" name="Awaiting Payment">
                         </td>
@@ -169,7 +166,6 @@ if (isset($_POST['Cancelled'])) {
                         <td>
                             <input type="submit" value="Cancelled" name="Cancelled">
                         </td>
-
                     </tr>
                 </form>
             </table>

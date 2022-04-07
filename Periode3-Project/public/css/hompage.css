@@ -1,20 +1,25 @@
-.containerHP{
+.containerHP {
     display: flex;
     flex-direction: row;
 }
-@media (max-width: 560px){
-    .containerHP{
+
+@media (max-width: 560px) {
+    .containerHP {
         flex-direction: row;
     }
-    .leftContainerHP{
+
+    .leftContainerHP {
         width: 100%;
     }
-    .leftContainerHP img{
+
+    .leftContainerHP img {
         width: 300%;
     }
-    .rightContainerHP h1, .rightContainerHP p, .rightContainerHP a{
+
+    .rightContainerHP h1, .rightContainerHP p, .rightContainerHP a {
         margin-left: -10%;
     }
+
     .designButton {
         border-radius: 360px;
         font-size: 20px;
@@ -27,6 +32,7 @@
         width: 40%;
         margin-bottom: 50px;
     }
+
     .designButton:hover {
         border-radius: 360px;
         width: 21%;
@@ -35,24 +41,30 @@
         color: black;
     }
 }
+
 @media (min-width: 561px) and (max-width: 1159px) {
-    .leftContainerHP{
+    .leftContainerHP {
         width: 50%;
     }
-    .rightContainerHP{
+
+    .rightContainerHP {
         width: 50%;
     }
-    .rightContainerHP h1{
+
+    .rightContainerHP h1 {
         margin-top: 15%;
     }
-    .rightContainerHP h1, .rightContainerHP p, .rightContainerHP a{
+
+    .rightContainerHP h1, .rightContainerHP p, .rightContainerHP a {
         margin-left: 4%;
     }
-    .leftContainerHP img{
+
+    .leftContainerHP img {
         height: auto;
         width: 100%;
         align-content: center;
     }
+
     .designButton {
         border-radius: 360px;
         width: 100%;
@@ -64,6 +76,7 @@
         text-align: center;
         transition: all 0.25s;
     }
+
     .designButton:hover {
         border-radius: 360px;
         width: 21%;
@@ -74,7 +87,7 @@
 }
 
 @media screen and (min-width: 1160px) {
-    .leftContainerHP{
+    .leftContainerHP {
         width: 50%;
     }
 
@@ -106,6 +119,7 @@
         text-align: center;
         transition: all 0.25s;
     }
+
     .designButton:hover {
         border-radius: 360px;
         width: 21%;

@@ -1,17 +1,19 @@
-.footerDiv{
+.footerDiv {
     background-color: #f1f1f1;
     box-shadow: 0 0 15px grey;
     height: 20%;
 }
-table{
+
+table {
     border: none;
 }
 
-.footerDiv img{
+.footerDiv img {
     width: 10%;
     height: auto;
 }
-.caseSelect{
+
+.caseSelect {
     width: 500px;
 }
 
