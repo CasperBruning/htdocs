@@ -1,0 +1,68 @@
+.titleBH {
+    float: left;
+    width: 100%;
+    background-color: white;
+}
+
+.leftContainerBH {
+    margin: 4px, 4px;
+    padding: 4px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    text-align: justify;
+    width: 20%;
+    height: 825px;
+    float: left;
+    background-color: white;
+
+}
+
+.rightContainerBH {
+    width: 80%;
+    height: 825px;
+    float: right;
+    background-color: white;
+}
+
+.leftContainerBH table {
+    border: 1px solid black;
+    width: 100%;
+}
+
+.leftContainerBH td {
+    /*padding: 3px;*/
+    padding-left: 4px;
+    border: 1px solid black;
+}
+
+.rightContainerBH form {
+    margin: 0 auto;
+}
+
+.rightContainerBH .orderTable {
+    border: 1px solid black;
+}
+
+.rightContainerBH .orderTable td {
+    border: 1px solid black;
+}
+
+.rightContainerBH .orderTable th {
+    border: 1px solid black;
+}
+
+.leftContainerBH td {
+    background-color: white;
+}
+
+.veranderStatusTable {
+    margin-top: 5px;
+}
+
+.veranderStatusTable th {
+    text-align: center;
+}
+
+.veranderStatusTable {
+    border: 1px solid black;
+}

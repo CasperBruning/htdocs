@@ -1,0 +1,83 @@
+.adminContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.adminNavMenu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+    .adminNavMenu .klantenBTN, .adminNavMenu .productenBTN, .adminNavMenu .ordersBTN{
+        width: 33%;
+        background-color: white;
+        text-align: center;
+        border: 1px solid black;
+    }
+    .adminNavMenu .klantenBTN:hover, .adminNavMenu .productenBTN:hover, .adminNavMenu .ordersBTN:hover{
+        background-color: lightgray;
+    }
+.adminContent{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+    .adminContent .productenContainerOverzicht{
+        display: flex;
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        text-align: justify;
+        height: 850px;
+        width: 48%;
+    }
+    .productenTableTD{
+        border: 1px solid black;
+        padding: 5px;
+    }
+    .productenTableTH{
+        border: 1px solid black;
+    }
+    .edit_btn {
+        text-decoration: none;
+        padding: 2px 5px;
+        background: #2E8B57;
+        color: white;
+        border-radius: 3px;
+    }
+
+    .del_btn {
+        text-decoration: none;
+        padding: 2px 5px;
+        color: white;
+        border-radius: 3px;
+        background: #800000;
+    }
+    .edit_btn:hover, .del_btn:hover{
+        text-decoration: none;
+        color: white;
+    }
+.productenContainerCRUD{
+    width: 50%;
+}
+    .productenContainerCRUD div form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .input-group{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn {
+        margin-top: 10px;
+        padding: 10px;
+        font-size: 15px;
+        color: white;
+        background: #5F9EA0;
+        border: none;
+        border-radius: 5px;
+    }
