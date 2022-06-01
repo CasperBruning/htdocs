@@ -1,2 +1,2 @@
 <?php
-require_once ('Producten.php');
+include 'Producten.php';

@@ -28,7 +28,8 @@
         overflow-x: hidden;
         overflow-y: scroll;
         text-align: justify;
-        height: 850px;
+        height: 715px;
+        /*height: 875px;*/
         width: 48%;
     }
     .productenTableTD{

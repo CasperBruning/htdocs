@@ -15,7 +15,8 @@ function db_getData($query)
 
 function db_insertData($query)
 {
-    $mysqli = new mysqli(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
+
+    $mysqli = new mysqli("localhost", "root", "", "computerDesignWebsitePHP");
     $result = "";
     if ($mysqli->query($query) === TRUE) {
         // Return row id for succes

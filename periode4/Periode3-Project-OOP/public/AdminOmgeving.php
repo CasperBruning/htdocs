@@ -1,5 +1,29 @@
 <?php
 require_once ('header.php');
+
+$productNaam = '';
+$typeComponent = '';
+$merk = '';
+$prijs = '';
+$update = 'false';
+if(isset($_GET['edit'])){
+
+    $id = $_GET['edit'];
+    $update = true;
+    $product = new Producten();
+//    print_r($product);
+
+    $product = $product->getProduct($id);
+
+    print_r('test2');
+
+    $test = $abc;
+
+    $productNaam = $product->naam;
+    $typeComponent = $product->typecomponent;
+    $merk = $product->merk;
+    $prijs = $product->prijs;
+}
 ?>
 <div class="adminContainer">
     <div class="adminNavMenu">
@@ -28,10 +52,10 @@ require_once ('header.php');
                                 <td class="productenTableTD"><?php echo $rows['naam']?></td>
                                 <td class="productenTableTD"><?php echo $rows['typecomponent']?></td>
                                 <td>
-                                    <a href="index.php?edit=<?php echo $row['id']; ?>" class="edit_btn" >Edit</a>
+                                    <a href="AdminOmgeving.php?edit=<?php echo $rows['productID']; ?>" class="edit_btn" >Edit</a>
                                 </td>
                                 <td>
-                                    <a href="server.php?del=<?php echo $row['id']; ?>" class="del_btn">Delete</a>
+                                    <a href="AdminOmgeving.php?del=<?php echo $rows['productID']; ?>" class="del_btn">Delete</a>
                                 </td>
                             </tr>
                             <?php

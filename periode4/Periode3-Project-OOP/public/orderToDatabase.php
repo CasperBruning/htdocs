@@ -126,6 +126,7 @@ require_once('header.php');
     </div>
 
 <?php
+
 if (isset($_POST['bestel'], $_POST['adres'], $_POST['postcode'], $_POST['woonplaats'])) {
     $userID = $_SESSION['userID'];
     $status = "Awaiting Payment";
@@ -146,7 +147,33 @@ if (isset($_POST['bestel'], $_POST['adres'], $_POST['postcode'], $_POST['woonpla
     $kabel = $_SESSION['kabel'];
     $opslag = $_SESSION['opslag'];
 
-    $orderProducten = db_insertData("INSERT INTO orders (gebruikerID, status, prebuild, verzendadress, verzendpostcode,verzendwoonplaats,productid_case, productid_cpu, productid_cpucooler, productid_ram, productid_mobo, productid_gpu, productid_fan, fan_Amount, productid_psu, productid_opslag,  productid_kabels, totaalPrijs)
-                                    VALUES ('$userID','$status' ,'$prebuild', '$adres', '$postcode', '$woonplaats', '$case', '$cpu', '$cpucooler','$ram', '$mobo', '$gpu', '$fan', '$fanamount', '$psu', '$opslag', '$kabel', '$totaalprijs')");
+    $orderProducten = db_insertData("INSERT INTO orders (gebruikersID, status, prebuild, verzendadress, verzendpostcode, verzendwoonplaats, productid_case, productid_cpu, productid_cpucooler, productid_ram, productid_mobo, productid_gpu, productid_fan, fan_Amount, productid_psu, productid_opslag, productid_kabels, totaalPrijs)
+                                    VALUES('$userID', '$status', '$prebuild', '$adres', '$postcode', '$woonplaats', '$case', '$cpu','$cpucooler','$ram','$mobo','$gpu','$fan','$fanamount','$psu','$opslag','$kabel','$totaalprijs')");
 }
 ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

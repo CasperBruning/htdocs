@@ -2,4 +2,4 @@
 session_start();
 $_SESSION["user_id"] = "";
 session_destroy();
-header("Location: homepage.php");
+header("Location: index.php");

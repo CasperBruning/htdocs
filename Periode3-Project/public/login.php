@@ -15,7 +15,7 @@ if (isset($_POST["login"])) {
         $_SESSION['userPASS'] = $user['wachtwoord'];
 
         header("Refresh:0");
-        header("location: homepage.php");
+        header("location: index.php");
     } else {
         ?>
         <script>

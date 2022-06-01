@@ -3,6 +3,7 @@ require_once("../config/database.php");
 require_once('../src/userFunctions.php');
 require_once("../src/databaseFunctions.php");
 require_once("../src/server.php");
+
 $user = null;
 session_start();
 
@@ -38,7 +39,7 @@ if (isset($_SESSION['userID'])) {
 <body>
 <section class="top-nav">
     <div>
-        <a href="homepage.php" class="logoHeader"><img align="center" src="img/logo.png"></a>
+        <a href="index.php" class="logoHeader"><img align="center" src="img/logo.png"></a>
         <a class="naamHeader">PC-Samensteller.nl</a>
     </div>
     <input id="menu-toggle" type="checkbox"/>
@@ -51,7 +52,7 @@ if (isset($_SESSION['userID'])) {
         <?php
         if ($user == 1) {
             ?>
-            <li><a href="beheer.php">AdminPage</a></li>
+            <li><a href="AdminOmgeving.php">AdminPage</a></li>
         <?php } ?>
         <?php
         if ($user != null) {
