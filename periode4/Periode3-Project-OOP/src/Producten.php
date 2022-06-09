@@ -13,11 +13,12 @@ class Producten
     {
         $this->db = new mysqli('localhost', 'root', '', 'computerDesignWebsitePHP');
     }
+
     public function getProduct($productID){
-        $product = $this->db->query("SELECT * FROM producten WHERE id = " . $productID);
+        $product = $this->db->query("SELECT * FROM producten WHERE productID = " . $productID);
         if ($product->num_rows > 0){
             $productArray = $product -> fetch_array();
-            $foundProduct = new User();
+            $foundProduct = new Producten();
 
             $foundProduct->productID = $productArray['productID'];
             $foundProduct->naam = $productArray['naam'];
@@ -32,17 +33,17 @@ class Producten
     }
 
     function save(){
-        $this->db->query("INSERT INTO producten (naam, typecomponent, merk, prijs) VALUES ('$this->naam', '$this->typecomponent', '$this->merk', '$this->merk', '$this->prijs')");
-        return "Gebruiker is toegevoegd";
+        $this->db->query("INSERT INTO producten (naam, typecomponent, merk, prijs) VALUES ('$this->naam', '$this->typecomponent', '$this->merk', '$this->prijs')");
+        return "Product is toegevoegd";
     }
 
     function update(){
-        $this->db->query("UPDATE producten SET firstName='$this->naam', '$this->typecomponent', '$this->merk', '$this->merk', '$this->prijs' WHERE productID=$this->productID");
-        return "Gebruiker is bijgewerkt";
+        $this->db->query("UPDATE producten SET naam='$this->naam', typecomponent='$this->typecomponent', merk='$this->merk', prijs='$this->prijs' WHERE productID=$this->productID");
+        return "Product is bijgewerkt";
     }
 
     function delete(){
         $this->db->query("DELETE FROM producten WHERE productID=$this->productID");
-        return "Gebruiker is verwijderd";
+        return "Product is verwijderd";
     }
 }

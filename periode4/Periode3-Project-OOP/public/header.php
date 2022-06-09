@@ -34,6 +34,7 @@ if (isset($_SESSION['userID'])) {
     <link rel="stylesheet" type="text/css" href="css/AdminOmgeving.css">
     <script src="js/jQuery/jquery-3.6.0.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/AdminOmgeving.js"></script>
     <title>PC-Samensteller</title>
 </head>
 <body>

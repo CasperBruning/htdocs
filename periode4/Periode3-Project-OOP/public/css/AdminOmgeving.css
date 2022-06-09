@@ -82,3 +82,10 @@
         border: none;
         border-radius: 5px;
     }
+    .filterLabel{
+        margin-left: 25px;
+        margin-bottom: 10px;
+    }
+    .dropdown{
+        width: 310px;
+    }
