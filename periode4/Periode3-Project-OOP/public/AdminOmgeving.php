@@ -3,7 +3,7 @@ require_once('header.php');
 
 $productID = '';
 $productNaam = '';
-$typeComponent = '';
+$typeComponent = '  ';
 $merk = '';
 $prijs = '';
 $update = false;
@@ -71,6 +71,22 @@ if (isset($_GET['edit'])) {
         <div class="productenContainerCRUD">
             <div>
                 <form method="post" action="../src/server.php">
+                    <div class="msgPlaceholder">
+                        <?php
+                        if (isset($_SESSION['message'])){
+                            ?>
+                            <div class="msg">
+                                <?php
+                                echo $_SESSION['message'];
+                                unset($_SESSION['message'])
+                                ?>
+                            </div>
+                        <?php
+                        }
+
+                        ?>
+
+                    </div>
                     <label>ProductID</label>
                     <input readonly type="text" name="productID" value="<?php echo $productID ?>">
                     <label>ProductNaam</label>
@@ -99,7 +115,7 @@ if (isset($_GET['edit'])) {
                     <label>merk</label>
                     <input type="text" name="merk" value="<?php echo $merk ?>">
                     <label>prijs</label>
-                    <input type="number" name="prijs" value="<?php echo $prijs ?>">
+                    <input id="prijs" type="text" name="prijs" value="<?php echo $prijs ?>">
                     <div class="input-group">
                         <?php if ($update == true) { ?>
                             <button class="btn" type="submit" name="update" style="background: #556B2F;">update</button>

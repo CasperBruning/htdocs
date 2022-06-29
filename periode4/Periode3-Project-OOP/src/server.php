@@ -12,20 +12,10 @@ if (isset($_POST['save'])){
     $newProduct->merk = $_POST['merk'];
     $newProduct->prijs = $_POST['prijs'];
 
-    $newProduct->save();
-
+    $_SESSION['message'] = $newProduct->save();
     header("location: ../public/AdminOmgeving.php");
 }
 
-if (isset($_GET['del'])){
-    $id = $_GET['del'];
-
-    $product = new Producten();
-    $product = $product->getProduct($id);
-    $product->delete();
-
-    header("location: ../public/AdminOmgeving.php");
-}
 if (isset($_POST['update'])){
     $id = $_POST['productID'];
     $product = new Producten();
@@ -36,6 +26,16 @@ if (isset($_POST['update'])){
     $product->merk = $_POST['merk'];
     $product->prijs = $_POST['prijs'];
 
-    $product->update();
+    $_SESSION['message'] = $product->update();
+    header('location: ../public/AdminOmgeving.php');
+}
+
+if (isset($_GET['del'])){
+    $id = $_GET['del'];
+
+    $product = new Producten();
+    $product = $product->getProduct($id);
+    $_SESSION['message'] = $product->delete();
+
     header('location: ../public/AdminOmgeving.php');
 }
